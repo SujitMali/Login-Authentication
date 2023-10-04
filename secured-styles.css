@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Arvo', serif;
+  align-items: center;
+  height: 100vh;
+  background-color: #101820;
+  margin: 0;
+}
+
+
+.calculator-title {
+  font-family: 'Orbitron', sans-serif; /* Change to Exo font */
+  font-size: 36px; /* Adjusted font size */
+  font-weight: bold; /* Added font weight for emphasis */
+  color: #101820; /* Title color */
+}
+
+
+.box {
+  background-color: #FEE715;
+  padding: 1px;
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow effect */
+  text-align: center;
+  margin-bottom: 100px; /* Margin to separate from the calculator */
+  box-shadow: 0 0 40px rgba(249, 238, 29, 5); /* Neon glow effect */
+}
+
+.calculator {
+  border: 5px solid white ;
+  font-family: 'Arvo', serif;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 400px;
+  background-color: #FEE715;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  padding: 10px;
+  text-align: right;
+  border-bottom: 5px solid black;
+}
+
+.display input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-family: 'Arvo', serif;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0; /* Remove gaps between buttons */
+}
+
+button {
+  border: 1px solid #101820;
+  padding: 25px; /* Adjusted button padding */
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FEE715;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #6d6200;
+}
+
+button:active {
+  background-color: #FEE715;
+}
+
+button.span-two {
+  grid-column: span 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #3498db;
+}
+
+
+.blink {
+  animation: blinker 0.7s cubic-bezier(0.5, 0, 0.5, 1) infinite alternate;
+}
+
+@keyframes blinker {
+  0% {
+    background-color:#FEE715; 
+    border-radius:40%;
+  }
+  100% {
+    background-color:lightblue;
+  }
+}
+
+

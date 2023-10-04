@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #00FFFF; /* Neon blue border */
+  border-radius: 5px;
+  width: 200px;
+  background-color: black;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00FFFF; /* Neon blue button */
+  color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #008080; /* Darker blue on hover */
+}
+
+#loginMessage {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
